@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+  	<title>GROCARY CART</title>
+  
+      
+    <meta charset="utf-8">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      
+      <style >
+
+
+      
+          .jumbotron {
+              
+              background-image: url("https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); background-attachment: fixed;
+              height: 450px;
+              text-align: center;
+              margin-top: 50px;
+              background-repeat: no-repeat;
+              background-size: cover;
+
+
+
+          #email {
+              
+              width: 300px;
+              
+          }
+          
+          #appSummary {
+              
+              text-align: center;
+              margin-top:50px;
+              margin-bottom: 20px;
+              width: 50px;
+              height: 50px;
+              
+          }
+          
+          .card-img-top {
+              
+              width: 100%;
+              
+              
+          }
+          
+          #appStoreIcon {
+              
+              width: 100px;
+
+              
+          }
+          
+  #footer {
+              
+              background-color: aqua;
+              padding-top: 200px;
+              margin-top: 100px;
+              text-align: center;
+              padding-bottom: 150px;
+          }
+                  
+          body {
+              
+              position: relative;
+              
+          }
+
+       
+
+		.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+#share-buttons img {
+            width: 35px;
+            padding: 5px;
+            border: 0;
+            box-shadow: 0;
+            display: inline;
+            }
+	 
+      
+      </style>
+      
+  </head>
+    
+  <body data-spy="scroll" data-target="#navbar" data-offset="150">
+
+
+        <nav class="navbar navbar-light bg-faded navbar-fixed-top" id="navbar">
+       
+        	
+       
+ 
+          <a class="navbar-brand" >GROCARY CART</a>
+
+      
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="webapp.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">New Items </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline pull-xs-right">
+            <button class="btn btn-success" type="button" onclick="location.href='login.html';" >Login</button>
+          </form>
+        </nav>
+
+        <div class="jumbotron" id="jumbotron">
+          <h1 class="display-3" style="color: black;">Welcome To The World Of Happiness!</h1>
+          <p class="lead""><h2  style="color: black;">"Passion For Food And Cooking"</h2></p>
+         
+           
+
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="email">Email address</label>
+            
+          </div>
+          <button  type="button" class="btn btn-primary"  onclick="location.href='registration.html';">Register Now!</button>
+        </form>
+        </div>
+      
+      <div class="container-fluid">
+      
+        <div class="row" id="appSummary">
+          
+            <h1 style="text-align: center">A Leading Whole Saleller</h1><br><br>
+            
+          </div>
+          
+      </div>
+      
+      
+      	
+      	<br>
+
+      	<div class="container">
+
+      <div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmMamSStfTcpc4Va9UQZYVtnnQJv7Zfvvpk7CCr7xnKq576kAi&usqp=CAU">
+    <div class="card-body">
+      <h5 class="card-title">Veg Basket</h5>
+      <p class="card-text">With all the vegetables included.</p>
+      <p>Rs:600</p>
+      <a  class="btn btn-primary" onclick="location.href='buy.php';">Buy Now</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZ7yqBQlhZDcj5Srx4DJvkwceUzmb3-SAubht-1LqmeQxJ12-I&usqp=CAU" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Non-Veg Basket</h5>
+      <p class="card-text">With all the ingredients to cook including.</p>
+      <p>Rs:800</p>
+      <a href="#" class="btn btn-primary" onclick="location.href='buy.php';">Buy Now</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0XktcaM8uZek0YpOE_WH4nUhYIXZ_Eumgg1GMBk8Ugqj8g9lQ&usqp=CAU" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Fruits Basket</h5>
+      <p class="card-text">With a fresh fruits.</p>
+      <p>Rs:1000</p>
+      <a href="#" class="btn btn-primary" onclick="location.href='buy.php';">Buy Now</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<div class="clear"></div>
+<br>
+<br>
+
+	          </div>
+  <p align="center" style="background-color: powderblue;"><br><br><br><br>
+    Register For Free
+  <a href="#!" class="btn btn-outline-white btn-rounded">Sign up!</a><br><br>© 2020 GROCARY CART.All Rights Reserved. <br>
+    
+
+<div id="share-buttons">
+                <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+                    <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                </a>
+                <a href="http://www.facebook.com/sharer.php?u=https://www.w3schools.com/css/css3_transitions.asp" target="_blank">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAAAXVBMVEVOcaj///86ZKFDaaTK0+PDzd9JbqY/Z6PH0OFGbKW4xNlSdKrd4uz7/P319/pqhbOfr8yOosWpuNFXeKzu8PXR2eZgfq98lLwvXZ6Xqcnk6PByjLezv9aCmL4nWZznX84gAAAExUlEQVR4nNWc25qjKhCFERRbiUSNhxin5/0fczy06XiKLFJu3esuF8r/SVEUVFWYYyN9ccM4Ka+FUkyp4lomcehetNW7GPpAdgm/r0oKIQIpWS8pg+a3VNfv8JLtShBlYVkIPxhGnkoGvijKMIt2ItBp7a+P/qSQ3K9TYEJMCbRX38XW6E8Kca89Uwgzgiy9icBw+F6BuKUPMoKsUj40fC9fVSZmuU2gY19YjN9K8Hh7LrYIolTYjt8xiHRrYWwQ5MUn43cMRf4BgU58U/Nfl/STt1PxjiBnn36AXoK9+wzrBFHFP/8AvSSv1q1hleBR26zANfn1qnNYI8gV5oG2FKi1mVgh8O5UMzBI3j2EIObE47fisTlBQmkCv/IrU4KdABqExIwg2WMKevEFhDnBbl+g1cJEzAjiPQEahJk5Tgm8/aagF58uyglBft8ZgLF7/o7goagd0VxSPdYJoprWFS8rqKNVgmpfKxw0XhCvBPneVjiI58sEmu1vBL0k04sEiV1EJIUvXmT0jEiWCHIbIwgEv1ah9/WUVxg95+dzgqjA50Dy0puEX9HV6DWyiGYEKT4HonCdqQwJmEinBNoCoFw4lJkSMKEnBDFMEFyX4l9zgnhMkMFmOFpRFgSMZyOCCv4EYjnwNCcQ1StBplAAWS+fQcwJmMpeCFJ4Eni4CIAQ+Okvgb6hAEysXE4ABOymnwQebAVrkwAR9KbUEeBhQTCPOKNWjgYIgnog0HhoJiZmoKvyR4hN3/UPgYVDnsabSsgfIW/pXDNrYzN8T+LjHcEytpF1T5BZPD4hsI3xW7/YEIQWgQEVQdgRlBYBMhGBLFuCzCI0ISMosobgYhMeEhEw/9IQ2JgBHUHYEHyDl+a81d+vMcFfPgh823dDALhR1tqO24XE443p8YyW3RJ7XeEwjYUGCxvCWOAnVZpdsJWwSQA6WHlhLrYUtgiQvbGVcFlIS4B6FxEyMEzfIniA4ZaIWQIuny0C0MEGCcNWzyZBDnpYWTLQcjYJQO8or8zstG1MAPv4goFnlS0C+ORxoyaAj38Wp7XwT6NJRveR/ukVgmZlwyD9RmK2Nwq/Fwyg8K/QiSo+aO0AXAvkBAXqD6gJGn8A+kRyghLdF6gJmn0Bv8IiJWj2RjA+ICcI0RiJnMBF40RqgiZOBGNlaoImVgbPC8QE7XkBDfBpCboz0/HnxuPPzsffHzg2OwPpHYoTHniT1d8j4bkF6rs0gvtES4LhPtHqTpWEYLhTtblXpiF43itb3K2TEPzerVvkF0gIXvILeI6FhOAlx4Kf9igIXvNMeK6NgmCUa4MPnAQE43wjnGMgIJjkXNG88+cE07wzmnsnIJjm3kHX/DHBvP4ArMGYEHyhBEs1GFgdikjd39qTLxc++omFOhSwFid4rb8B6/rXanFOUI90fE3Wf1aXJlbr0k5Qm3d8feIJajRPUKd6glrdnReESb3yCWq2T1C3vttEmNfun6B/4QQ9HCfoY6Hu5RF4L88J+pmc43u6HKq+NmHf1+Yc39vnnKC/0Wl7PPmhPZ6tju5z7Risen3N2r//L/3OPURac75ZhCkl57v0fPdq+97fdJ4Pfe/QO616/4uV3v9i997/p57/f3BTTN0++/+Df4MZQ6+AEsdFAAAAAElFTkSuQmCC" alt="Facebook" />
+                </a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                </a>
+                </div>
+      
+
+  <br><br></p>
+  </div> 
+      
+   
+      
+ 
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+                    
+  </body>
+    
+</html>

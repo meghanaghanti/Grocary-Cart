@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+.bg-image {
+  /* The image used */
+  /*background-image: url("background.jpg");*/
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: white; /* Fallback color */
+  background-image: linear-gradient(90deg,purple,blue); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f1f1f1;
+  border-radius:10px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+}
+
+input[type=text], select {
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 15%; 
+    background-color:white;
+    color: purple;
+    font-size: 60%;
+    font-weight: bold;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+
+input[type=reset] {
+    width: 15%;
+    background-color:white;
+    color: purple;
+    font-size: 60%;
+    font-weight: bold;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: green;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 40px; /* Should be removed. Only for demonstration */
+}
+
+</style>
+</head>
+<body>
+<script language="javascript">
+function check()
+{
+
+ if(document.form1.username.value=="")
+  {
+    alert("Plese Enter Username");
+  document.form1.username.focus();
+  return false;
+  }
+
+  if(document.form1.email.value=="")
+  {
+    alert("Plese Enter email address");
+  document.form1.email.focus();
+  return false;
+  }
+
+  if(document.form1.mobilenumber.value=="")
+  {
+    alert("Plese Enter Contact No");
+  document.form1.phone.focus();
+  return false;
+  }
+
+  if( document.form1.usertype.value == "-1" )
+   {
+     alert( "Please provide your user type!" );
+     document.form1.usertype.focus() ;
+     return false;
+   }   
+
+  if( document.form1.sector.value == "-1" )
+   {
+     alert( "Please provide your area of interest!" );
+     document.form1.sector.focus() ;
+     return false;
+   }   
+
+   if( document.form1.state.value == "-1" )
+   {
+     alert( "Please provide state!" );
+     document.form1.state.focus() ;
+     return false;
+   }   
+
+  if(document.form1.address.value=="")
+  {
+    alert("Plese Enter The Address");
+  document.form1.address.focus();
+  return false;
+  }
+ 
+ if(document.form1.password.value=="")
+  {
+    alert("Plese Enter Your Password");
+  document.form1.password.focus();
+  return false;
+  } 
+  if(document.form1.password.value!=document.form1.cpassword.value)
+  {
+    alert("Confirm Password does not matched");
+  document.form1.cpassword.focus();
+  return false;
+  }
+  return true;
+}
+</script>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <center>
+<h2><div class="row">
+  <form  name="form1" action="signup.php" method="POST" onSubmit="return check()";>
+    <center>Registration Form</center><br/>
+    
+    <input type="text" id="fname" name="username" placeholder="User name*">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+    <input type="text" id="fname" name="email" placeholder="Email Id*">
+
+    <input type="text" id="fname" name="mobilenumber" placeholder="Mobile number*">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <select id="fname" name="Gender">
+      <option value="-1">Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    
+    
+    <select id="fname" name="state">
+      <option value="-1">State*</option>
+      <option value="andrapradesh">Andra Pradesh</option>
+      <option value="aruunachalpradesh">Aruunachal Pradesh</option>
+      <option value="assam">Assam</option>
+      <option value="bihar">Bihar</option>
+      <option value="chhattisgarh">Chhattisgarh</option>
+      <option value="goa">Goa</option>
+      <option value="gujarat">Gujarat</option>
+      <option value="haryana">Haryana</option>
+      <option value="himachalpradesh">Himachal Pradesh</option>
+      <option value="jammuandkashmir">Jammu And Kashmir</option>
+      <option value="jharkhand">Jharkhand</option>
+      <option value="karnataka">Karnataka</option>
+      <option value="kerala">Kerala</option>
+      <option value="madhyapradesh">Madhya Pradesh</option>
+      <option value="maharashtra">Maharashtra</option>
+      <option value="manipur">Manipur</option>
+      <option value="meghalaya">Meghalaya</option>
+      <option value="mizoram">Mizoram</option>
+      <option value="nagaland">Nagaland</option>
+      <option value="odisha">Odisha</option>
+      <option value="punjab">Punjab</option>
+      <option value="rajasthan">Rajasthan</option>
+      <option value="sikkim">Sikkim</option>
+      <option value="tamilnadu">Tamil Nadu</option>
+      <option value="telangana">Telangana</option>
+      <option value="tripura">Tripura</option>
+      <option value="uttarpradesh">Uttar Pradesh</option>
+      <option value="uttarakhand">Uttarakhand</option>
+      <option value="westbengal">West Bengal</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <input type="text" id="fname" name="address" placeholder="Address*">
+
+
+   <input type="password" id="myInput"  placeholder="Password*" name="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <input type="password" id="cmyInput"  placeholder="Confirm-password*"  name="cpassword">
+   <center><input type="checkbox" onclick="myFunction()">Show Password</center>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+</script>  
+
+    <input type="reset" value="Reset">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="Submit">
+  
+  </form>
+</div>
+</h2></center>
+</body>
+
+
+
+</div>
+
+</body>
+</html>
